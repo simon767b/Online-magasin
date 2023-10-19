@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/reset.css">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap" rel="stylesheet">
+    <meta name="description" content="Rosmarin er en folkekær krydderurt, som bruges som krydderi i et hav af retter. Derudover har den også medicinske egenskaber, såsom at lindre fordøjelsesproblemer, forbedre hukommelse og koncentration. ">
+</head>
+<body>
+    <!--top navigation-->
+    <Header>
+
+        <nav>
+            <a href="index.html"> <img loading="lazy" width="165" height="154" src="img/logo.png" alt="logo" class="logo"></a>
+
+        <ul>
+            <li class="visikke"><a href="#">Hjemme</a>
+            <ul class="dropdown">
+                <li><a href="#">Hjemme</a>
+                <li><a href="ugenstip.html">Ugens tip</a>
+                <li><a href="#">Affald og genbrug</a>
+                <li><a href="#">Indretning</a>
+                <li><a href="#">Kompost</a>
+            </ul>
+            
+            <li class="visikke"><a href="#">Ude</a>
+                <ul class="dropdown">
+                    <li><a href="#">Ude</a>
+                    <li><a href="#">Demonstrationer</a>
+                    <li><a href="#">Samle affald</a>
+                    <li><a href="#">Plant et træ</a>
+                </ul>
+            <li class="visikke"><a href="#">Gro selv</a>
+                <ul class="dropdown">
+                    <li><a href="#">Gro selv</a>
+                    <li><a href="#">Svampe</a>
+                    <li><a href="urtehaven.html">Urtehaven</a>
+                    <li><a href="#">Luftrensere</a>
+                    <li><a href="#">Grøntsager</a>
+                </ul>
+            <li class="visikke"><a href="#">Mad</a>
+                <ul class="dropdown">
+                    <li><a href="#">Mad</a>
+                    <li><a href="#">Veganer</a>
+                    <li><a href="#">Kød</a>
+                    <li><a href="#">Vegetar</a>
+                </ul>
+            <li class="visikke"><a href="#">Organisationer</a>
+                <ul class="dropdown">
+                    <li><a href="#">Organisationer</a>
+                    <li><a href="anima.html">Anima</a>
+                    <li><a href="#">Greenpeace</a>
+                    <li><a href="#">WWF</a>
+                </ul>
+            <li class="visikke" class=".sidste"><a href="#">Inspiration</a>
+                <ul class="dropdown">
+                    <li><a href="#">Inspiration</a>
+                    <li><a href="#">Sociale medier</a>
+                    <li><a href="#">Bloggere</a>
+                    <li><a href="#">Bøger</a>
+                </ul>
+
+        </ul>
+        <div class="toggle_btn">
+            <i class="fa-solid fa-bars"></i>
+        </div>
+
+<!--start burgermenu-->
+<div class="dropdown_menu">
+    <ul class="burgerlist">
+
+        <li><a href="#">Hjemme</a>
+        <ul class="dropdown">
+            <li><a href="ugenstip.html" class="burgerlink">Ugens tip</a>
+            <li><a href="#" class="burgerlink">Affald og genbrug</a>
+            <li><a href="#" class="burgerlink">Indretning</a>
+            <li><a href="#" class="burgerlink">Kompost</a>
+        </ul>
+        
+        <li><a href="#">Ude</a>
+            <ul class="dropdown">
+                <li><a href="#">Demonstrationer</a>
+                <li><a href="#">Samle affald</a>
+                <li><a href="#">Plant et træ</a>
+            </ul>
+        <li><a href="#">Gro selv</a>
+            <ul class="dropdown">
+                <li><a href="#">Svampe</a>
+                <li><a href="urtehaven.html">Urtehaven</a>
+                <li><a href="#">Luftrensere</a>
+                <li><a href="#">Grøntsager</a>
+            </ul>
+        <li><a href="#">Mad</a>
+            <ul class="dropdown">
+                <li><a href="#">Veganer</a>
+                <li><a href="#">Kød</a>
+                <li><a href="#">Vegetar</a>
+            </ul>
+        <li><a href="#">Organisationer</a>
+            <ul class="dropdown">
+                <li><a href="anima.html">Anima</a>
+                <li><a href="#">Greenpeace</a>
+                <li><a href="#">WWF</a>
+            </ul>
+        <li><a href="#">Inspiration</a>
+            <ul class="dropdown">
+                <li><a href="#">Sociale medier</a>
+                <li><a href="#">Bloggere</a>
+                <li><a href="#">Bøger</a>
+            </ul>
+
+    </ul>
+</div>
+
+    <!--slut burgermenu-->
+
+        
+
+
+    </nav>
+    </Header>
+
+    <script>
+        const toggleBtn = document.querySelector('.toggle_btn')
+        const toggleBtnIcon = document.querySelector('.toggle_btn i')
+        const dropDownMenu = document.querySelector('.dropdown_menu')
+    
+        toggleBtn.onclick = function (){
+            dropDownMenu.classList.toggle('open')
+            const isOpen = dropDownMenu.classList.contains('open')
+    
+            toggleBtnIcon.classList = isOpen
+            ? 'fa-solid fa-xmark'
+            : 'fa-solid fa-bars'
+    
+        }
+    </script>
+    
+    <!--indholdet på siden-->
+    
+    <h1 class="undersideoverskift">
+        Rosmarin
+       </h1>
+
+    <section class="underside">
+        <div>
+            <img loading="lazy" width="1440" height="960" src="img/Rosmarinmini.jpg" alt="Rosmarin" class="textbilleder">
+            <p class="textstyle">
+                <span class="fedoverskrift">Kærlighedens urt</span>
+                <br>
+                Drømmer du om at tilføje en smule friskhed og aroma i hjemmet? Hvorfor så ikke prøve at dyrke rosmarin indendørs? Rosmarin (Rosmarinus Officinalis) er en skattet urt, der bringer en fantastisk aroma og smag til dine retter. Men dens anvendelser stopper ikke der. Rosmarin er også en smuk plante, der kan trives i indendørs omgivelser, og dens tørrede blade har medicinske egenskaber. Så lad os udforske, hvordan du kan dyrke din egen rosmarin i dit eget hjem.
+                <br> <br>
+            </p>
+
+        </div>
+        
+    </section>
+
+    <section class="underside">
+        <div>
+            <p class="textstyle">
+                <span class="fedoverskrift">Formålet med at dyrke Rosmarin i hjemmet</span>
+                <br> <br>
+                <span class="fedskrift">Kulinarisk Brug:</span> Rosmarin er en alsidig urt i køkkenet. Brug den frisk eller tørret i en bred vifte af retter, såsom kød, grøntsager, bagværk og saucer for at tilføje smag og aroma.
+                <br> <br>
+                <span class="fedskrift">Æstetisk Skønhed:</span> Rosmarin er en smuk plante med nålelignende blade og små blomster. Det kan tjene som en dekorativ tilføjelse til dit indendørs rum og tilføre friskhed og skønhed til dit hjem.
+                <br> <br>
+                <span class="fedskrift">Medicinske Egenskaber:</span> Rosmarin har traditionelt været anvendt til at lindre fordøjelsesproblemer, forbedre hukommelse og koncentration samt som en naturlig antiinflammatorisk og antioxidant
+                <br><br>
+                <span class="fedoverskrift">Formålet med at dyrke Rosmarin i hjemmet</span>
+                <br> <br>
+                <span class="fedskrift">1. Kulinarisk Brug:</span> Rosmarin er en alsidig urt i køkkenet. Brug den frisk eller tørret i en bred vifte af retter, såsom kød, grøntsager, bagværk og saucer for at tilføje smag og aroma.
+                <br> <br>
+                <span class="fedskrift">2. Æstetisk Skønhed:</span> Rosmarin er en smuk plante med nålelignende blade og små blomster. Det kan tjene som en dekorativ tilføjelse til dit indendørs rum og tilføre friskhed og skønhed til dit hjem.
+                <br> <br>
+                <span class="fedskrift">3. Medicinske Egenskaber:</span> Rosmarin har traditionelt været anvendt til at lindre fordøjelsesproblemer, forbedre hukommelse og koncentration samt som en naturlig antiinflammatorisk og antioxidant
+                <br> <br>
+                <span class="fedoverskrift">Forhold for dyrkning af Rosmarin i hjemmet:</span> 
+                <br> <br>
+                </p>
+                <div class="kildeboks">
+                    <ul class="kildeliste">
+                    <p class="kildebokstext">Videre læsning</p>
+                    <li><a href="https://www.plantorama.dk/guide/have/haveplanter/spiselige-baer-og-planter/krydderurter/dyrkning-af-rosmarin" class="kilde">Plantorama</a></li>
+                    <li><a href="https://havehandel.dk/rosmarin-dyrkning/" class="kilde">Havehandel</a></li>
+                    <li><a href="https://www.isabellas.dk/haven/krydderurter/pasning-og-pleje-af-rosmarin-i-haven" class="kilde">Isabellas</a></li>
+                    <li><a href="https://hverdagshaven.dk/rosmarin/" class="kilde">Hverdagshaven</a></li>
+                    </ul>
+                </div>
+                <p class="textstyle">
+                <span class="fedskrift">1. Belysning:</span> Rosmarin trives bedst i meget lys, så placér din plante tæt ved et vindue, der modtager mindst 6-8 timers direkte sollys om dagen. Hvis direkte sollys er begrænset, kan du overveje at bruge kunstigt lys, såsom vækstlys.
+                <br> <br>
+                <span class="fedskrift">2. Jord:</span> Brug en veldrænet jordblanding, der indeholder sand eller perlit for at forbedre dræning. Sørg for, at potten har drænhuller i bunden for at undgå rodrot.
+                <br> <br>
+                <span class="fedskrift">3. Vanding:</span> Rosmarin foretrækker at tørre ud mellem vandingerne. Vær forsigtig med ikke at overvande, da dette kan føre til rådne rødder. Vand planten, når jorden føles tør 2-3 centimeter ned.
+                <br> <br>
+                <span class="fedskrift">4. Temperatur:</span> Rosmarin trives ved moderat temperatur, ideelt mellem 18-24 grader Celsius. Undgå udsættelse for kulde og træk.
+                <br> <br>
+                <span class="fedskrift">5. Beskæring:</span> For at fremme en tættere vækst og fjerne døde grene, kan du beskære din rosmarinplante. Gør dette om foråret, inden ny vækst begynder.
+                <br> <br>
+                Jeg håber, at dette er nok til at få dig godt i gang med at dyrke dine egne planter. Du kan evt. kigge på andre planter du selv kan dyrke eller se videoer om hvordan man kommer i gang.
+                God fornøjelse.
+
+
+
+                
+            </p>
+
+
+        </div>
+        
+    </section>
+
+    <footer>
+
+        <div class="følgcontainer">
+        <p class="følgos">Følg os på:</p>
+        <ul class="socialmedia">
+            <li><a href="#"> <img src="img/facebook.png" width="77" height="77" alt="Facebook" class="socialicons"> </a></li>
+            <li><a href="#"> <img src="img/instagramicon.png" width="77" height="77" alt="Instagram" class="socialicons"> </a></li>
+            <li><a href="#"> <img src="img/tiktok.png" width="77" height="77" alt="Tiktok" class="socialicons"> </a></li>
+        </ul> 
+    </div>
+
+    <div class="følgcontainer">
+        <ul class="kontaktcontainer">
+            <li><p class="følgos">Kontakt os via:</p></li>
+            <li><a href="tel:30222617" class="kontaktskrift"><img src="img/telephone.png" width="38" height="38"  alt="Telefon" class="kontakticons">30222617</a></li>
+            <li><a href="mailto:simon767b@gmail.com" class="kontaktskrift"><img src="img/email.png" width="38" height="38" alt="E-mail" class="kontakticons">simon767b@gmail.com</a></li>
+
+        </ul>
+
+    </div>  
+
+</footer>
+
+    
+
+
+</body>
+</html>

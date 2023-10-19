@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/reset.css">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap" rel="stylesheet">
+    <meta name="description" content="Her får man det sidste nye indenfor metoder, hvorpå man kan gøre sin hverdag mere bæredygtig. Der kommer et nyt tip én gang i ugen og der vil også være mulighed for at se tilbage på de andre ugers tip.">
+</head>
+<body>
+    <!--top navigation-->
+    <Header>
+
+        <nav>
+            <a href="index.html"> <img loading="lazy" width="165" height="154" src="img/logo.png" alt="logo" class="logo"></a>
+
+        <ul>
+            <li class="visikke"><a href="#">Hjemme</a>
+            <ul class="dropdown">
+                <li><a href="#">Hjemme</a>
+                <li><a href="ugenstip.html">Ugens tip</a>
+                <li><a href="#">Affald og genbrug</a>
+                <li><a href="#">Indretning</a>
+                <li><a href="#">Kompost</a>
+            </ul>
+            
+            <li class="visikke"><a href="#">Ude</a>
+                <ul class="dropdown">
+                    <li><a href="#">Ude</a>
+                    <li><a href="#">Demonstrationer</a>
+                    <li><a href="#">Samle affald</a>
+                    <li><a href="#">Plant et træ</a>
+                </ul>
+            <li class="visikke"><a href="#">Gro selv</a>
+                <ul class="dropdown">
+                    <li><a href="#">Gro selv</a>
+                    <li><a href="#">Svampe</a>
+                    <li><a href="urtehaven.html">Urtehaven</a>
+                    <li><a href="#">Luftrensere</a>
+                    <li><a href="#">Grøntsager</a>
+                </ul>
+            <li class="visikke"><a href="#">Mad</a>
+                <ul class="dropdown">
+                    <li><a href="#">Mad</a>
+                    <li><a href="#">Veganer</a>
+                    <li><a href="#">Kød</a>
+                    <li><a href="#">Vegetar</a>
+                </ul>
+            <li class="visikke"><a href="#">Organisationer</a>
+                <ul class="dropdown">
+                    <li><a href="#">Organisationer</a>
+                    <li><a href="anima.html">Anima</a>
+                    <li><a href="#">Greenpeace</a>
+                    <li><a href="#">WWF</a>
+                </ul>
+            <li class="visikke" class=".sidste"><a href="#">Inspiration</a>
+                <ul class="dropdown">
+                    <li><a href="#">Inspiration</a>
+                    <li><a href="#">Sociale medier</a>
+                    <li><a href="#">Bloggere</a>
+                    <li><a href="#">Bøger</a>
+                </ul>
+
+        </ul>
+        <div class="toggle_btn">
+            <i class="fa-solid fa-bars"></i>
+        </div>
+
+<!--start burgermenu-->
+<div class="dropdown_menu">
+    <ul class="burgerlist">
+
+        <li><a href="#">Hjemme</a>
+        <ul class="dropdown">
+            <li><a href="ugenstip.html" class="burgerlink">Ugens tip</a>
+            <li><a href="#" class="burgerlink">Affald og genbrug</a>
+            <li><a href="#" class="burgerlink">Indretning</a>
+            <li><a href="#" class="burgerlink">Kompost</a>
+        </ul>
+        
+        <li><a href="#">Ude</a>
+            <ul class="dropdown">
+                <li><a href="#">Demonstrationer</a>
+                <li><a href="#">Samle affald</a>
+                <li><a href="#">Plant et træ</a>
+            </ul>
+        <li><a href="#">Gro selv</a>
+            <ul class="dropdown">
+                <li><a href="#">Svampe</a>
+                <li><a href="urtehaven.html">Urtehaven</a>
+                <li><a href="#">Luftrensere</a>
+                <li><a href="#">Grøntsager</a>
+            </ul>
+        <li><a href="#">Mad</a>
+            <ul class="dropdown">
+                <li><a href="#">Veganer</a>
+                <li><a href="#">Kød</a>
+                <li><a href="#">Vegetar</a>
+            </ul>
+        <li><a href="#">Organisationer</a>
+            <ul class="dropdown">
+                <li><a href="anima.html">Anima</a>
+                <li><a href="#">Greenpeace</a>
+                <li><a href="#">WWF</a>
+            </ul>
+        <li><a href="#">Inspiration</a>
+            <ul class="dropdown">
+                <li><a href="#">Sociale medier</a>
+                <li><a href="#">Bloggere</a>
+                <li><a href="#">Bøger</a>
+            </ul>
+
+    </ul>
+</div>
+
+    <!--slut burgermenu-->
+
+        
+
+
+    </nav>
+    </Header>
+
+    <script>
+        const toggleBtn = document.querySelector('.toggle_btn')
+        const toggleBtnIcon = document.querySelector('.toggle_btn i')
+        const dropDownMenu = document.querySelector('.dropdown_menu')
+    
+        toggleBtn.onclick = function (){
+            dropDownMenu.classList.toggle('open')
+            const isOpen = dropDownMenu.classList.contains('open')
+    
+            toggleBtnIcon.classList = isOpen
+            ? 'fa-solid fa-xmark'
+            : 'fa-solid fa-bars'
+    
+        }
+    </script>
+    
+    <!--indholdet på siden-->
+    
+    <h1 class="undersideoverskift">
+        Ugens tip
+       </h1>
+
+    <section class="underside">
+        <div class="skriftbaggrund">
+            <h2 class="ugenstip">Ugens tip</h2>
+            <p class="tipskrift">Mørke temaer har ikke kun en æstetisk appel, men også en positiv indvirkning på miljøet. Computerskærme, især dem med baggrundlys i høj opløsning som LED og LCD, bruger betydelige mængder energi til at generere lys. Lyse farver kræver  nemlig mere energi end mørke farver. Dette betyder, at skærmen er nødt til at arbejde hårdere for at producere de lyse farver, hvilket øger strømforbruget. 
+                <br><br>Her kommer mørke temaer ind i billedet. De mørke pixels på en computer kræver næsten intet strøm. Så Sørg for at din computer bruger mørke temaer og har en mørk baggrund.
+            </p>
+        </div>
+        
+       <div class="container">
+        <h3 class="overskriftpicture">Mørkt tema</h3>
+        <img loading="lazy" width="768" height="503" src="img/Computer.png" alt="Computer" class="undersidebilleder">
+        </div>
+    </section>
+
+    <img loading="lazy" width="1862" height="165" src="img/blade.png" alt="blade" class="linje" >
+
+    <section class="underside">
+        <div class="container"> 
+         <h3 class="overskriftpicture">Vandkande i bruseren</h3>
+         <img loading="lazy" width="768" height="503" src="img/vandkande.png" alt="vandkande" class="undersidebilleder">
+         </div>
+
+         <div class="skriftbaggrund">
+            <h2 class="ugenstip">Sidste uges tip</h2>
+            <p class="tipskrift">Brusebad er en daglig nødvendighed for de fleste af os, og det er en tid, hvor vi kan slappe af og genoplade vores indre batteri. 
+                <br><br>    
+                Hvad nu hvis jeg fortalte dig, at du kunne forvandle dit daglige brusebad til en bæredygtig handling uden at ofre komfort eller bekvemmelighed?
+                <br><br>
+                Det er ikke ualmindeligt at lade vandet i bruseren løbe, mens vi venter på, at det når den ønskede temperatur. I denne korte ventetid går der ofte store mængder rent drikkevand tabt.
+				Her kommer vandkanden ind i billedet. Ved at placere en vandkande i brusebadet kan du opfange det spildte vand og bruge det på vanding af planter, rengøring eller skylning af toilet. På denne måde elemineres vandspildet, og du bidrager til at bevare en værdifuld ressource.
+            </p>
+        </div>
+     </section>
+
+     <footer>
+
+        <div class="følgcontainer">
+        <p class="følgos">Følg os på:</p>
+        <ul class="socialmedia">
+            <li><a href="#"> <img src="img/facebook.png" width="77" height="77" alt="Facebook" class="socialicons"> </a></li>
+            <li><a href="#"> <img src="img/instagramicon.png" width="77" height="77" alt="Instagram" class="socialicons"> </a></li>
+            <li><a href="#"> <img src="img/tiktok.png" width="77" height="77" alt="Tiktok" class="socialicons"> </a></li>
+        </ul> 
+    </div>
+
+    <div class="følgcontainer">
+        <ul class="kontaktcontainer">
+            <li><p class="følgos">Kontakt os via:</p></li>
+            <li><a href="tel:30222617" class="kontaktskrift"><img src="img/telephone.png" width="38" height="38"  alt="Telefon" class="kontakticons">30222617</a></li>
+            <li><a href="mailto:simon767b@gmail.com" class="kontaktskrift"><img src="img/email.png" width="38" height="38" alt="E-mail" class="kontakticons">simon767b@gmail.com</a></li>
+
+        </ul>
+
+    </div>  
+
+</footer>
+
+</body>
+</html>

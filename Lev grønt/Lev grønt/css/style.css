@@ -1,0 +1,610 @@
+/*Styling*/
+*{
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Patrick Hand', cursive;
+    background-color: #044D29;
+}
+
+/*styles*/
+.forsidefooter{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+
+.bruntpapir{
+    background-image: url(../img/brown_paper.png);
+    background-repeat:no-repeat;
+    background-position:center 30px;
+    background-size: 90vw 30em;
+    z-index: 1000;
+}
+
+h4{
+    color: #45BF55;
+}
+
+/*Top nav*/
+header{
+    background-color: #00261C;
+}
+
+header nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+header ul{
+    display: flex;
+    gap: 1vw;
+}
+
+header ul li{
+    display: flex;
+    
+}
+
+header ul li.sidste{
+    margin-right: 15px;
+}
+
+header ul li a{
+padding: 10px 10px;
+text-decoration: none;
+color: #45BF55;
+flex-direction: column;
+z-index: 1000;
+font-size: 3vw;
+padding: 2vw 1vw;
+
+}
+
+.logo{
+    width: auto;
+    height: 8vw;
+    image-rendering: optimizeSpeed;
+}
+
+/*Dropdown*/
+
+header ul li a:hover{
+   color: #97ED8A;
+   background-color: #044D29;
+   border-radius: 20vw;
+}
+
+header ul li ul.dropdown li{
+    display: flex;
+}
+
+
+header ul li ul.dropdown{
+    
+    position: absolute;
+    background-color: #00261C;
+    z-index: 999;
+    display: none;
+    overflow: hidden;
+    
+}
+
+
+
+ul li:hover ul.dropdown{
+    display: flex;
+    flex-direction: column;
+    border-radius:0vw 0vw 3vw 3vw;
+}
+
+/*burgermenu*/
+.dropdown_menu{
+    display: none;
+    position: absolute;
+    right: 0vw;
+    top: 8.2vw;
+    height: 0px;
+    width: 20vw;
+    background-color: #00261C;
+    border-radius: 0px 0px 10px 10px;
+    transition: height 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    overflow: hidden;
+
+}
+
+.burgerlist{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-top: 3vw 3vw;
+    gap: 0px;
+}
+
+.dropdown_menu ul li a{
+    padding:0.5vw 0.5vw;
+    width: 100%;
+    text-align: center;
+}
+
+.dropdown_menu ul li{
+    display: flex;
+    width: 100%;
+}
+
+.dropdown_menu.open{
+    height: 25vw;
+    overflow: visible;
+  }
+
+
+  .toggle_btn {
+    position: absolute;
+    right: 30px;
+    color: white;
+    font-size: 1.5em;
+    cursor: pointer;
+    display: none;
+  }
+
+  /*Dropdown burger*/
+
+  .dropdown_menu ul li a:hover{
+    color: #97ED8A;
+    background-color: #044D29;
+    border-radius: 10vw;
+ }
+ 
+ .dropdown_menu ul li ul.dropdown li{
+     display: flex;
+     width: auto;
+ }
+ 
+ 
+ .dropdown_menu ul li .dropdown{
+     
+     position: absolute;
+     right: 20vw;
+     background-color: #00261C;
+     z-index: 1001;
+     display: none;
+    
+     /*overflow: hidden;*/
+     
+ }
+ 
+ 
+ 
+ .dropdown_menu ul li:hover ul.dropdown{
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     border-radius:10px 0px 10px 10px;
+     overflow: hidden;
+     padding: 1vw 1vw;
+ }
+
+  
+
+/*-----media queries----*/
+@media screen and (max-width: 992px){
+  
+    .navbar li{
+      display: none;
+    }
+  
+    .toggle_btn{
+      display: block;
+      
+    }
+  
+    .dropdown_menu{
+      display: block;
+    }
+
+    .visikke{
+        display: none;
+    }
+
+  }
+
+  /*burgermenu*/
+
+
+/*forside*/
+
+
+#forsideoverskift{
+    color: #97ED8A;
+    text-align: center;
+    font-family: Patrick Hand;
+    font-size: 10vw;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-shadow: 0.5vw 0.5vw 0vw  rgba(0, 0, 0, 0.50);
+
+}
+
+.forsideskrift{
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    font-size: 3vw;
+    font-weight: bold;
+    color: #00261C;
+    padding: 0vw 2vw;
+}
+
+.forside{
+    display: flex;
+    width: 70%;
+    margin: 40px 15vw 10px ;
+
+
+}
+
+.forsidebaggrund{
+    background-image: url(../img/forside.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    overflow: visible;
+    z-index: -999;
+    image-rendering: optimizeSpeed;
+}
+
+.forsidebilleder{
+    width: 30vw;
+    height: auto;
+    image-rendering: optimizeSpeed;
+    border-radius: 20px;
+}
+
+.skriftbaggrund{
+    background-image: url(../img/brown_paper.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    overflow: visible;
+    image-rendering: optimizeSpeed;
+    
+}
+
+.indhold{
+   padding-bottom: 9vw;
+}
+
+/*undersider*/
+.undersideoverskift{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #45BF55;
+    text-align: center;
+    font-family: Patrick Hand;
+    font-size: 10vw;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+
+}
+
+
+.ugenstip{
+    padding-top: 9vw;
+    padding-left: 10vw;
+    font-weight: bold;
+    font-size: 5vw;
+    color: #00261C;
+}
+
+.tipskrift{
+    font-size: 1.5vw;
+    font-weight: bold;
+    padding: 2vw 10vw 8vw ;
+    color: #00261C;
+}
+
+
+.underside{
+    display: flex;
+    margin: 10px 2.5vw 10px ;
+    overflow: visible;
+
+}
+
+.undersidebilleder{
+    width: 40vw;
+    height: auto;
+    image-rendering: optimizeSpeed;
+    border-radius: 0 0 20px 20px;
+}
+
+.linje{
+    width: 100%;
+    height: auto;
+    rotate: 180deg;
+    image-rendering: optimizeSpeed;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.overskriftpicture{
+    color: #45BF55;
+    padding: 5px;
+    background-color: #1E1E1E;
+    width: 100%;
+    border-radius: 20px 20px 0 0;
+    display: flex;
+    justify-content: center;
+    padding: 2vw;
+    font-size: 2.5vw;
+}
+
+
+/*Urtehaven*/
+.kassecontainer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top: 5vw;
+}
+.kasser{
+    background-color: #45BF55;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2vw 2vw;
+    border-radius: 20px;
+    transition-duration: 1s;
+    transition-property: transform, background-color;
+    transition-timing-function: ease;
+}
+
+.kasser:hover{
+    transform: scale(110%);
+    background-color: #97ED8A;
+    
+}
+
+.kassetext{
+    color: #044D29;
+    font-size: 2vw;
+}
+
+.kasser a{
+    text-decoration: none;
+    color: #45BF55;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+}
+
+
+
+.kassebilleder{
+    width: 25vw;
+    height: auto;
+    image-rendering: optimizeSpeed;
+
+}
+
+
+
+/*Urtehaven underside (rosmarin)*/
+
+.textstyle{
+    font-size: 2vw;
+    color: #45BF55;
+}
+
+.textbilleder{
+    display: block;
+    float: right;
+    width: 75vw;
+    height: auto;
+    image-rendering: optimizeSpeed;
+}
+
+.fedskrift{
+    font-weight: bolder;
+}
+
+.fedoverskrift{
+    font-weight: bolder;
+    font-size: 2.5vw;
+}
+
+/*kildeboks (kan genbruges)*/
+.kildeboks{
+    display: flex;
+    flex-direction: column;
+    float: right;
+    background-color: #00261C;
+    padding: 2vw 3.5vh;
+}
+.kildebokstext{
+    display: flex;
+    align-self: center;
+    font-weight: bolder;
+    font-size: 2.0vw;
+    color: #45BF55;
+}
+.kilde{
+    text-decoration: none;
+    color: #45BF55;
+    font-size: 1.5vw;
+}
+
+.kilde:hover{
+    color: #97ED8A;
+}
+
+.kildeliste{
+    display: flex;
+    flex-direction: column;
+    list-style: circle;
+    color: #45BF55;
+    gap: 1.5vw;
+}
+
+/*Anima*/
+.anima{
+    display: flex;
+}
+
+.animabillede1{
+    width: 40vw;
+}
+
+.animabillede2{
+    width: 30vw;
+}
+
+.textstyleanima1{
+    font-size:2vw;
+    color: #45BF55;
+}
+
+.textstyleanima2{
+    font-size:1.2vw;
+    color: #45BF55;
+}
+
+.linjeanima{
+    opacity: 40%;
+    width: 100%;
+}
+
+/*kildeboks Anima*/
+.kildeboksanima{
+    display: flex;
+    flex-direction: column;
+    float: right;
+    background-color: #00261C;
+    padding: 1vw 2vh;
+    border-radius: 20px 0 0 20px;
+}
+
+.kildebokstextanima{
+    display: flex;
+    align-self: center;
+    font-weight: bolder;
+    font-size: 2.0vw;
+    color: #45BF55;
+}
+
+.kildeanima{
+    text-decoration: none;
+    color: #45BF55;
+    font-size: 1.5vw;
+    transition-duration: 1s;
+    transition-property: transform, background-color, border-radius;
+    transition-timing-function: ease;
+}
+
+.kildeanima:hover{
+    background-color: #97ED8A;
+    overflow: hidden;
+    border-radius: 5px;
+    transform: scale(80%);
+    
+}
+
+.kildelisteanima{
+    list-style: circle;
+    color: #45BF55;
+}
+
+.icons{
+    width: 4vw;
+    transition-property: transform, background-color;
+    transition-timing-function: ease;
+}
+
+/*Footer*/
+
+footer{
+    background-color: #00261C;
+    display: flex;
+    justify-content: space-around;
+    padding: 20px 0 20px 0 ;
+    width: 100%;
+}
+
+
+.socialmedia{
+    display: flex;
+    gap: 2vw;
+}
+
+footer nav ul li{
+    display: flex;
+    align-items: center;
+}
+
+.følgos{
+    color: #45BF55;
+    font-size: 2vw;
+}
+
+.følgcontainer{
+    display: flex;
+    flex-direction: column;
+    gap: 2vw;
+}
+
+.kontaktskrift{
+    display: flex;
+    align-items: center;
+    color: #45BF55;
+    font-size: 2vw;
+    text-decoration: none;
+}
+
+.kontaktskrift:hover{
+    color: #97ED8A;
+}
+
+.kontaktcontainer{
+    display: flex;
+    flex-direction: column;
+    gap: 2vw;
+}
+
+.kontakticons{
+    width: 2vw;
+    height: auto;
+    image-rendering: optimizeSpeed;
+    margin-right: 1vw;
+}
+
+.socialicons{
+    width: 4vw;
+    height: auto;
+    image-rendering: optimizeSpeed;
+}
+
+
+
+
+
+
+
+
+
+
